@@ -9,5 +9,5 @@ resultado = df.sort_values(["vendedor", "precio_unitario"], ascending=[True, Fal
 
 print(resultado)
 
-resultado = df.sort_values("vendedor", ascending=False)
-
+resultado.to_csv("C:\\resultados\\resultado.csv", index=False)
+resultado.to_excel("C:\\resultados\\resultado.xlsx", index=False)
